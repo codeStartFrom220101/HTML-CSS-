@@ -126,6 +126,7 @@ section {
 .course p,
 .course li {
     line-height: 1.5;
+    text-align: justify
 }
 
 .comparetitle {
@@ -136,8 +137,7 @@ section {
 }
 
 .compare {
-    margin: 0 auto;
-    margin-bottom: 50px;
+    margin: 0 auto 50px;
 }
 
 .compare th,
@@ -149,13 +149,13 @@ section {
 }
 
 .compare th {
-    padding: 10px;
     background: #f7f7f7;
     color: black;
     text-align-last: left;
     font-weight: bolder;
 }
 
+.compare th,
 .compare td {
     padding: 10px;
 }
@@ -207,11 +207,14 @@ form h4 {
     flex-direction: column;
 }
 
-.NPMContent p {
+.NPMContent label {
     margin-bottom: 5px;
+    display: block;
 }
 
-.NPMContent input[type="text"] {
+.NPMContent input[type="text"],
+.NPMContent input[type="tel"],
+.NPMContent input[type="email"] {
     border-radius: 5px;
     padding: 5px;
     margin-bottom: 15px;
